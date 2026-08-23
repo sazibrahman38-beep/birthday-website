@@ -1,34 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Birthday Surprise 🎂</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Birthday Gift ❤️</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="hearts"></div>
 
-        <h1>🎂 Happy Birthday! 🎂</h1>
+    <div class="book">
 
-        <p>Wishing you a very happy birthday ❤️</p>
+        <!-- PAGE 1 -->
+        <div class="page active">
 
-        <button onclick="showMessage()">
-            🎁 Open Your Gift
-        </button>
+            <div class="page-content">
 
-        <p id="message"></p>
+                <h1>🎁 A Special Gift</h1>
 
-        <h2>📸 Our Memories</h2>
+                <p class="small">
+                    This little book is made specially for you ❤️
+                </p>
 
-        <div class="gallery">
-            <img src="1781783307039.jpg">
-            <img src="IMG-20260621-WA0006.jpg">
-            <img src="IMG-20260803-WA0004.jpg">
-            <img src="IMG-20260817-WA0000.jpg">
+                <button onclick="nextPage()">
+                    Open Gift 💖
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAGE 2 -->
+        <div class="page">
+
+            <div class="page-content">
+
+                <h1>🎂 Happy Birthday!</h1>
+
+                <img src="1781783307039.jpg">
+
+                <p>
+                    আজকের দিনটা তোমার জন্য অনেক সুন্দর হোক।
+                    তোমার মুখের হাসিটা সবসময় এমনই থাকুক। ❤️
+                </p>
+
+                <button onclick="nextPage()">
+                    Next Page ➜
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAGE 3 -->
+        <div class="page">
+
+            <div class="page-content">
+
+                <h1>📸 Beautiful Memories</h1>
+
+                <img src="IMG-20260621-WA0006.jpg">
+
+                <p>
+                    কিছু মুহূর্ত খুব ছোট হলেও,
+                    স্মৃতিতে তারা অনেক বড় হয়ে থাকে। ✨
+                </p>
+
+                <button onclick="nextPage()">
+                    Next Page ➜
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAGE 4 -->
+        <div class="page">
+
+            <div class="page-content">
+
+                <h1>💌 A Little Message</h1>
+
+                <img src="IMG-20260803-WA0004.jpg">
+
+                <p>
+                    তুমি আমার কাছে সত্যিই খুব special একজন মানুষ।
+                    তোমার জীবনের প্রতিটা দিন আনন্দে ভরে উঠুক।
+                    তোমার সব সুন্দর স্বপ্ন পূরণ হোক। ❤️
+                </p>
+
+                <button onclick="nextPage()">
+                    One More Page ➜
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAGE 5 -->
+        <div class="page">
+
+            <div class="page-content">
+
+                <h1>🌸 One Last Memory</h1>
+
+                <img src="IMG-20260817-WA0000.jpg">
+
+                <p>
+                    আজকের এই বিশেষ দিনে শুধু একটা কথাই বলি—
+                    সবসময় ভালো থেকো এবং হাসিখুশি থেকো। 💖
+                </p>
+
+                <button onclick="nextPage()">
+                    Final Surprise 🎁
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAGE 6 -->
+        <div class="page">
+
+            <div class="page-content final">
+
+                <h1>🎉 Happy Birthday! 🎉</h1>
+
+                <div class="big-heart">
+                    ❤️
+                </div>
+
+                <p>
+                    Wishing you endless happiness,
+                    beautiful memories and lots of smiles. ✨
+                </p>
+
+                <button onclick="location.reload()">
+                    Read Again 🔄
+                </button>
+
+            </div>
+
         </div>
 
     </div>
+
 
     <script src="script.js"></script>
 
