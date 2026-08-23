@@ -1,4 +1,18 @@
-function showMessage() {
-    document.getElementById("message").innerHTML =
-        "🎉 Surprise! Happy Birthday! ❤️";
+let currentPage = 0;
+
+const pages = document.querySelectorAll(".page");
+
+
+function nextPage() {
+
+    if (currentPage >= pages.length - 1) {
+        return;
+    }
+
+    pages[currentPage].classList.add("turn");
+
+    currentPage++;
+
+    pages[currentPage].classList.add("active");
+
 }
